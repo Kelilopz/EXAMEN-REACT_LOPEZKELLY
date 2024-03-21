@@ -20,14 +20,13 @@ body{
 
 }
 header{
-    background-color: var(--color-body);
-    box-shadow: 0 0 10px var(--color-tertiary);
-    padding: 0.5em;
+    
     height: 10vh;
     grid-area: banner;
     display: flex;
     flex: 1;
     flex-direction: row;
+    overflow-x:scroll ;
 }
 .header ul{
     color: var(--color-primary);
@@ -41,19 +40,25 @@ header{
     align-items: center;
 }
 .header ul li a{
-    background: red;
+    /* background: red; */
     text-transform: capitalize;
     width: 30vh;
     font-weight: 500%;
-    font-size: 150%;
+    font-size: 100%;
+    text-align: center;
+}
+.header ul li a:hover{
+    color: var(--color-tertiary);
+    text-shadow: 0px 0px 10px var(--color-shadow);
 }
 
 ::-webkit-scrollbar {
     width: .7em;
+    height: .5em;
     background-color: var(--color-tertiary);
 }
 ::-webkit-scrollbar-track {
-    border: 1px solid var(--color-tertiary);
+    border: .2px solid var(--color-tertiary);
     background-color: var(--color-black);
 }
 ::-webkit-scrollbar-thumb{
@@ -67,7 +72,7 @@ header{
  }
 main{
     background: var(--color-shadow);
-    box-shadow: 0 0 8px var(--color-tertiary);
+    box-shadow: 0 0 2px var(--color-tertiary);
     /* background: red; */
     grid-area: contenido;
     overflow-y: scroll;
@@ -95,7 +100,6 @@ main{
     display: flex;
     width: 10vh;
     height: 12vh;
-    border: 1px solid white;
     flex-direction: column;
     border: 1px solid  gray;
 
@@ -154,6 +158,11 @@ main{
     font-size: 150%;
     border: none;
 }
+.information button:hover{
+    color: var(--color-tertiary);
+    background: var(--color-body);
+    box-shadow: 0 0 10px var(--color-tertiary);
+}
 .information p{
     font-size: 80%;
     width: 80%;
@@ -161,4 +170,10 @@ main{
 .information h1{
     width: 80%;
     color: var(--color-tertiary);
+    
+}
+#15{
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
